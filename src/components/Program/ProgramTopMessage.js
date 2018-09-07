@@ -1,6 +1,6 @@
 import React from "react";
 
-const TopMessage = (props) => {
+const ProgramTopMessage = (props) => {
 
   return (
       <section className="b-section b-section--dark">
@@ -26,4 +26,4 @@ const TopMessage = (props) => {
 
 };
 
-export default TopMessage;
+export default ProgramTopMessage;

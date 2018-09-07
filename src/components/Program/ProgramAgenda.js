@@ -1,7 +1,7 @@
 import React from "react";
 import API from "./../../config/API";
 
-export default class Program extends React.Component {
+export default class ProgramAgenda extends React.Component {
 
   constructor(props) {
     super(props);
