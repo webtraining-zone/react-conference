@@ -1,6 +1,6 @@
 import React from "react";
 
-const WelcomeHero = (props) => {
+const HomeHero = (props) => {
 
   return (
       <section className="b-section b-section--dark">
@@ -25,4 +25,4 @@ const WelcomeHero = (props) => {
   );
 };
 
-export default WelcomeHero;
+export default HomeHero;
