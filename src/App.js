@@ -1,5 +1,4 @@
 import React, {Component} from "react";
-import Header from "./components/Common/Header/Header";
 import Router from "./routing/Router";
 import "./styles/global.css";
 import "./App.css";
@@ -9,7 +8,6 @@ class App extends Component {
   render() {
     return (
         <div className="App">
-          <Header/>
           <Router/>
         </div>
     );

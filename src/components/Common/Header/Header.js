@@ -1,5 +1,6 @@
-import React from 'react';
-import './Header.css';
+import React from "react";
+import {Link} from "react-router-dom";
+import "./Header.css";
 
 const Header = (props) => {
 
@@ -7,9 +8,7 @@ const Header = (props) => {
     <nav
         className="navbar navbar-expand-md navbar-light navbar-laravel b-navigation-bar">
       <div className="container">
-        <a className="navbar-brand" href="/">
-
-        </a>
+        <Link to="/" className="b-nav-link">Conference</Link>
         <button className="navbar-toggler" type="button"
                 data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -21,9 +20,7 @@ const Header = (props) => {
 
           <ul className="navbar-nav ml-auto">
             <li className="nav-item">
-              <a href="/program" className="b-nav-link">
-                Programa
-              </a>
+              <Link to="/program" className="b-nav-link">Programa</Link>
             </li>
           </ul>
 
