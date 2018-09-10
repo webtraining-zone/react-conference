@@ -2,11 +2,14 @@ import React from "react";
 import ProgramAgenda from "./ProgramAgenda";
 import ProgramTopMessage from "./ProgramTopMessage";
 
-const ProgramIndex = () => {
+const ProgramIndex = (props) => {
+
+  const {history} = props;
+
   return (
       <div>
         <ProgramTopMessage/>
-        <ProgramAgenda/>
+        <ProgramAgenda history={history}/>
       </div>
   );
 };
