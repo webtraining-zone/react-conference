@@ -25,42 +25,8 @@ const Header = (props) => {
                 Programa
               </a>
             </li>
-            <li className="nav-item">
-              <a href="/sponsors" className="b-nav-link">
-                Patrocinadores
-              </a>
-            </li>
           </ul>
 
-
-          <ul className="navbar-nav ml-auto">
-
-            {/* Authentication Links  */}
-
-            <li className="nav-item">
-              <a className="nav-link" href="#">Iniciar sesión</a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href="#">Registro</a>
-            </li>
-
-            <li className="nav-item dropdown">
-              <a id="navbarDropdown" className="nav-link dropdown-toggle"
-                 href="#" role="button"
-                 data-toggle="dropdown" aria-haspopup="true"
-                 aria-expanded="false">Username <span
-                  className="caret"></span>
-              </a>
-
-              <div className="dropdown-menu dropdown-menu-right"
-                   aria-labelledby="navbarDropdown">
-                <a className="dropdown-item" href="/logout">
-                  Cerrar sesión
-                </a>
-              </div>
-            </li>
-
-          </ul>
         </div>
       </div>
     </nav>
