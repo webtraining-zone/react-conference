@@ -3,6 +3,7 @@ import React from "react";
 import FixUtils from "../../helpers/FixUtils";
 import API from "./../../config/API";
 import Loader from "../Common/Loader/Loader";
+import DateUtils from "../../helpers/DateUtils";
 
 export default class ProgramAgenda extends React.Component {
 
@@ -71,7 +72,11 @@ export default class ProgramAgenda extends React.Component {
 
                         <div className="b-schedule-item-header__date">
                             <span className="b-schedule-item-header__time">
-
+                              {DateUtils.formatDate
+                              (talk.starts_at, "YYYY-MM-DD HH:mm:ss", "HH:mm")}
+                              &nbsp;-&nbsp;
+                              {DateUtils.formatDate
+                              (talk.ends_at, "YYYY-MM-DD HH:mm:ss", "HH:mm")}
                             </span>
                         </div>
 

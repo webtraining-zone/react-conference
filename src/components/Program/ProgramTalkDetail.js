@@ -2,6 +2,7 @@ import React from "react";
 import API from "../../config/API";
 import FixUtils from "../../helpers/FixUtils";
 import Loader from "../Common/Loader/Loader";
+import DateUtils from "../../helpers/DateUtils";
 
 export default class ProgramTalkDetail extends React.Component {
   state = {talk: null, error: null, isLoaded: false};
@@ -47,7 +48,11 @@ export default class ProgramTalkDetail extends React.Component {
 
             <section className="b-section b-section--highlighted">
             <span className="b-talk__time text-center d-block p-3">
-
+              {DateUtils.formatDate
+              (talk.starts_at, "YYYY-MM-DD HH:mm:ss", "HH:mm")}
+              &nbsp;-&nbsp;
+              {DateUtils.formatDate
+              (talk.ends_at, "YYYY-MM-DD HH:mm:ss", "HH:mm")}
             </span>
             </section>
 
@@ -58,7 +63,8 @@ export default class ProgramTalkDetail extends React.Component {
                     <div className="mt-5">
                       <div
                           className="text-center text-sm-left"
-                          dangerouslySetInnerHTML={this.createMarkup(talk)}></div>
+                          dangerouslySetInnerHTML={this.createMarkup(
+                              talk)}></div>
                     </div>
                   </div>
                 </div>
