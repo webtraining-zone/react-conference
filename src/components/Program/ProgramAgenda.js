@@ -2,6 +2,7 @@ import React from "react";
 // import {Redirect} from "react-router-dom";
 import FixUtils from "../../helpers/FixUtils";
 import API from "./../../config/API";
+import Loader from "../Common/Loader/Loader";
 
 export default class ProgramAgenda extends React.Component {
 
@@ -55,7 +56,7 @@ export default class ProgramAgenda extends React.Component {
     if (error) {
       return <div>Error: {this.state.error.message}</div>;
     } else if (!isLoaded) {
-      return <div>Loading...</div>;
+      return <Loader/>;
     } else {
       return (<section className="b-section b-section--news mt-5">
             <div className="container">

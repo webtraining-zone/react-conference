@@ -1,6 +1,7 @@
 import React from "react";
 import API from "../../config/API";
 import FixUtils from "../../helpers/FixUtils";
+import Loader from "../Common/Loader/Loader";
 
 export default class ProgramTalkDetail extends React.Component {
   state = {talk: null, error: null, isLoaded: false};
@@ -14,7 +15,7 @@ export default class ProgramTalkDetail extends React.Component {
     if (error) {
       return <div>Error: {this.state.error.message}</div>;
     } else if (!isLoaded) {
-      return <div>Loading...</div>;
+      return <Loader/>;
     } else {
       return (<article className="b-talk">
 
