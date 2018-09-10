@@ -6406,7 +6406,7 @@ a {
     color: #626262; }
   .b-schedule-item__speaker {
     color: #626262; }
-  .b-schedule-item__image img {
+  .b-schedule-item__image {
     cursor: pointer; }
 
 .b-schedule-item-header__date {

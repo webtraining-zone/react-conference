@@ -32,11 +32,11 @@ export default class ProgramTalkDetail extends React.Component {
                     <div
                         className="mt-3 mt-sm-5 mt-md-5 mt-lg-5 mt-xl-5 text-center text-sm-left">
                   <span
-                      className="b-talk__place text-uppercase d-block">Room</span>
+                      className="b-talk__place text-uppercase d-block">{talk.room.name}</span>
                       <h1 className="b-talk__title">{talk.title}</h1>
                       <p className="b-talk__speaker pb-5">
                         <strong>Speaker: </strong>
-                        <span>SPEAKER</span>
+                        <span>{talk.speaker.name}</span>
                       </p>
                     </div>
                   </div>
@@ -69,6 +69,7 @@ export default class ProgramTalkDetail extends React.Component {
     }
   }
 
+  // Runs as soon as the component is "mounted" / "added" to the page
   componentDidMount() {
     // 1. Get the "slug" from the params (injected automatically)
     const {slug} = this.props.match.params;

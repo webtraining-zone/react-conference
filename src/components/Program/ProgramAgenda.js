@@ -79,14 +79,17 @@ export default class ProgramAgenda extends React.Component {
                             <div
                                 className="col-12 col-sm-7 col-md-5 col-lg-4 col-xl-4">
                               <img src={FixUtils.fixImageURL(talk.thumbnail)}
-                                   className="img-fluid rounded"
+                                   className="img-fluid rounded b-schedule-item__image"
                                    onClick={() => this.handleClick(talk)}/>
                             </div>
                             <div
                                 className="col-12 col-sm-7 col-md-7 col-lg-8 col-xl-8">
                             <span
-                                className="b-schedule-item__place text-uppercase">Room</span>
-                              <a href="#" onClick={() => this.handleClick(talk)}>
+                                className="b-schedule-item__place text-uppercase">
+                              {talk.room.name}
+                              </span>
+                              <a href="#"
+                                 onClick={() => this.handleClick(talk)}>
                                 <h4 className="b-schedule-item__title">
                                   {talk.title}
                                 </h4>
@@ -95,7 +98,7 @@ export default class ProgramAgenda extends React.Component {
                               <p>
                                 <strong>Conferencista: </strong>
                                 <span
-                                    className="b-schedule-item__speaker">Speaker</span>
+                                    className="b-schedule-item__speaker">{talk.speaker.name}</span>
                               </p>
 
                               <p className="b-schedule-item__summary">
