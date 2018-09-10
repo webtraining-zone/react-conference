@@ -27,6 +27,11 @@
   &__speaker {
     color: lighten($dark-gray, 5%);
   }
+
+  &__image img {
+    cursor: pointer;
+  }
+
 }
 
 .b-schedule-item-header {
