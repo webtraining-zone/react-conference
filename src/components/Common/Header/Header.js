@@ -8,7 +8,7 @@ const Header = (props) => {
     <nav
         className="navbar navbar-expand-md navbar-light navbar-laravel b-navigation-bar">
       <div className="container">
-        <Link to="/" className="b-nav-link">Conference</Link>
+        <Link to="/" className="navbar-brand">Conference</Link>
         <button className="navbar-toggler" type="button"
                 data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false"
